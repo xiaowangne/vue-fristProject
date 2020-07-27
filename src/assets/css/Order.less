@@ -1,0 +1,104 @@
+@bgColor: #f4a018;
+@color: #ffa200;
+
+.order-page {
+    .order-content {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .van-tabs__content .van-tabs__content--animated{
+        padding-bottom: 70px;
+    }
+    .bottom-button {
+        width: 80px;
+        height: 30px;
+        background-color: #f6f6f6;
+        border: 1px solid #ddd;
+        color: #8a8a8a;
+        border-radius: 5px;
+    }
+
+    .order {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        .order-title {
+            width: calc(~"100% - 30px");
+            margin: 0 auto;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ddd;
+
+            .state {
+                color: #8a8a8a;
+            }
+
+            .del {
+                margin-left: 10px;
+
+                .van-icon-delete {
+                    line-height: 40px;
+                    color: #8a8a8a;
+
+                }
+
+
+            }
+
+            .van-button--primary {
+                background-color: @color;
+                border: 0.02667rem solid @color;
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+
+        .van-card {
+            background: #fff;
+
+            span {
+                height: 24px;
+                line-height: 24px;
+            }
+
+            .title {
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .price {
+                font-weight: 500;
+            }
+
+
+
+            .van-card__desc,
+            .rules {
+                color: #8a8a8a;
+                font-size: 12px;
+            }
+        }
+
+        .total-box {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 16px;
+            box-sizing: border-box;
+
+            .total-count,
+            .timer {
+                color: #8a8a8a;
+            }
+
+            .total {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+
+
+
+    }
+}

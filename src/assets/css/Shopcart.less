@@ -1,0 +1,127 @@
+@bgColor: #f4a018;
+@color: #ffa200;
+
+.shopcart-page {
+    .bottom-button {
+        width: 80px;
+        height: 30px;
+        background-color: #f6f6f6;
+        border: 1px solid #ddd;
+        color: #8a8a8a;
+        border-radius: 5px;
+      }
+    .van-nav-bar__text {
+        color: @bgColor;
+    }
+
+    >.shopcart-content {
+        position: fixed;
+        top: 46px;
+        left: 0;
+        right: 0;
+        bottom: 106.06px;
+        color: #333;
+        overflow-y: auto;
+
+        >.van-swipe-cell {
+            border-bottom: 1px solid #ddd;
+
+            .checkbox-box {
+                padding: 0 10px;
+                height: 108.04px;
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+
+            }
+
+            .goods-card {
+                margin: 0;
+                width: calc(~"100% - 40px");
+                background-color: #fff;
+            }
+
+            .van-card {
+                padding: 10px 10px 10px 0;
+                box-sizing: border-box;
+            }
+
+            .delete-button {
+                height: 100%;
+            }
+
+            .van-button--danger {
+                background-color: @color;
+                border: 1px solid @color;
+            }
+
+            .van-swipe-cell__right {
+                right: -1px;
+            }
+
+            .van-stepper__minus {
+                border: 1px solid @bgColor;
+                background: @bgColor;
+                color: #fff;
+            }
+
+            .van-stepper__plus {
+                background: @bgColor;
+            }
+
+            .van-card__content {
+                padding-left: 10px;
+
+                .title {
+                    font-size: 16px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+
+                .rules {
+                    height: 24px;
+                    line-height: 28px;
+                    margin-left: 10px;
+                    color: #8a8a8a;
+                }
+            }
+
+            .van-card__desc {
+                color: #8a8a8a;
+            }
+
+            .van-card__price {
+                font-size: 14px;
+                color: @bgColor;
+            }
+        }
+
+        .submit-box {
+            .van-submit-bar {
+                bottom: 50.03px;
+            }
+            .van-submit-bar__bar{
+                padding:0 10px ;
+                justify-content: space-between;
+            }
+            .van-submit-bar__button--danger{
+                background: linear-gradient(to right,#ffa200,#ff6034)
+            }
+            .van-submit-bar__price{
+                color: @bgColor;
+            }
+        }
+
+        .none-box{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: #8a8a8a;
+        }
+
+    }
+
+
+}

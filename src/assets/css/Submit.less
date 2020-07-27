@@ -1,0 +1,103 @@
+@bgColor: #f4a018;
+@color: #ffa200;
+
+.submit-page {
+    color: #333;
+
+    .content-box {
+        position: fixed;
+        top: 46.01px;
+        left: 0;
+        right: 0;
+        bottom: 50.03px;
+        padding: 10px 10px 30px;
+        overflow-y: auto;
+
+        >.area {
+            background: #fff;
+            height: 40px;
+            border-radius: 5px;
+            line-height: 40px;
+            font-size: 14px;
+            padding: 0 6px;
+            box-sizing: border-box;
+
+            >span .van-icon {
+                color: #333;
+            }
+        }
+
+        >.order {
+            margin-top: 10px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            .van-card {
+                background: #fff;
+                .title {
+                    font-size: 15px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+
+                .price {
+                    height: 24px;
+                    line-height: 28px;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .van-card__desc,
+                .rules {
+                    color: #8a8a8a;
+                    font-size: 12px;
+                }
+            }
+
+            .total-box {
+                height: 40px;
+                line-height: 40px;
+                padding: 0 16px;
+                box-sizing: border-box;
+                .total-content {
+                    color: #8a8a8a;
+                }
+
+                .total {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .van-nav-bar__text,
+    .van-nav-bar .van-icon {
+        color: @bgColor;
+    }
+
+    .van-button--danger {
+        background: linear-gradient(to right,#ffa200,#ff6034);
+        border: 1px solid @color;
+    }
+
+    .van-action-sheet {
+        min-height: 200px;
+    }
+
+    .van-address-item__edit {
+        display: none;
+    }
+
+    .van-address-item .van-radio__icon--checked .van-icon {
+        background-color: @color;
+        border-color: @color;
+    }
+
+    .van-submit-bar__price {
+        color: @bgColor;
+    }
+
+}

@@ -1,0 +1,72 @@
+@bgColor: #f4a018;
+.menu-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  .user{
+    width: 30px;
+    height: 30px;
+    background-color: skyblue;
+    img{
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+   .van-search__content {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+   .van-search__action {
+    line-height: 0;
+    width: 36px;
+    color:#ffa200;
+    text-align: center;
+  }
+  > .menu-content {
+    width: 100%;
+    height: calc(~"100% - 217.03px");
+    > .aside-menu {
+      width: 100px;
+      height: 100%;
+      position: relative;
+      overflow-y: auto;
+      .van-sidebar {
+        width: 100%;
+      }
+       .van-sidebar-item {
+        padding: 10px;
+        text-align: center;
+        // border-bottom:1px solid #ddd;
+      }
+       .van-sidebar-item--select {
+        color: @bgColor;
+        background: #fff;
+      }
+       .van-sidebar-item--select::before {
+        background-color: @bgColor;
+        height: 100%;
+        width: 2px;
+      }
+    }
+    > .content {
+      width: calc(~"100% - 100px");
+      padding: 10px 10px 0;
+      box-sizing: border-box;
+      height: 100%;
+      overflow-y: auto;
+      background: #fff;
+       .van-card {
+        background: #f6f6f6;
+      }
+       .van-card__title{
+          font-size: 15px;
+      }
+       .van-card__price{
+          color:@bgColor;
+      }
+    }
+  }
+}
